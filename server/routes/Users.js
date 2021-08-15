@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt')
 const {sign} = require("jsonwebtoken")
 const {validateToken} = require('../middleware/AuthMiddleware')
 
-// gesitration
+// registration
 router.post("/",async (req,res)=>{
     const {username,password} = req.body
     // hashing and salting the password
